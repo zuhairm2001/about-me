@@ -19,6 +19,7 @@ Professional software engineer with hands-on experience building and maintaining
 
 - **Platform Development:** Contributed to the core AKS service, enabling managed Kubernetes clusters at scale for enterprise customers.  
 - **Scalability & Reliability:** Worked on multi-tenant orchestration, autoscaling, and high availability of clusters across regions.  
+- **Security & Compliance:** Implemented RBAC, network policies, and platform-level security features to ensure tenant isolation and compliance.  
 - **Automation & Observability:** Built and maintained automated deployment pipelines, monitoring, and alerting systems for platform health and performance.  
 - **Cloud-Native Engineering:** Applied distributed systems principles to design and maintain critical infrastructure services, including the control plane, networking, and storage integrations.
 
