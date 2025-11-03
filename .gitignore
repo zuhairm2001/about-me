@@ -1,0 +1,25 @@
+# Node.js
+node_modules/
+package-lock.json
+yarn.lock
+bun.lock
+
+# Build outputs
+output.pdf
+dist/
+build/
+
+# Environment
+.env
+.env.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Go
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib

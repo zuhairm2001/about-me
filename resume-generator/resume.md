@@ -1,37 +1,13 @@
-<!--
-Welcome to resume.lol !
-
-This is the template you can use to get started.
-
-Easily remove personal info by using a variable follow with a second value and "||":
-
-@NAME=Real Name||Hidden Name
-
-and change @REDACTED to be true
-
-@REDACTED=true
--->
-@REDACTED=false
-@NAME=Zuhair Malik||Hidden
-@EMAIL=zuhairm2001@hotmail.com||fake@email.com
-@PHONE=(+61) 434802898
-@LOCATION=Sydney, NSW||City, State ZIP
-@WEBSITE=zuhairmalik.dev
-@LINKEDIN=https://www.linkedin.com/in/zuhair-malik-53322919b/||linkedin.com
-@GITHUB=https://github.com/zuhairm2001||github.com
-
-# {NAME}
+# Zuhair Malik
 
 
-{LOCATION} | {PHONE} | {EMAIL} 
+Sydney | +61 434 802 898 | me@zuhairmalik.dev 
 
-[{WEBSITE}](https://{WEBSITE})
-[{LINKEDIN}](https://{LINKEDIN})
-[{GITHUB}](https://{GITHUB})
+https://zuhairmalik.dev
+https://www.linkedin.com/in/zuhair-malik-53322919b/
+https://github.com/zuhairm2001
 <div className="vertical-spacer"></div>
-<!-- Move this section above Technical Skills if you're a student/new grad -->
 
-<!-- Move this section above Technical Skills if you're a student/new grad -->
 ## Professional Summary
 
 Professional software engineer with hands-on experience building and maintaining cloud-native, distributed systems at scale. Skilled in developing and operating high-availability platforms, automating infrastructure, and applying distributed systems principles to complex services such as Azure Kubernetes Service.
@@ -63,7 +39,7 @@ Professional software engineer with hands-on experience building and maintaining
 
 **Frontend** | Next.js, Vite, Tailwind
 
-**Backend** | Node.js/Express.js, Hono, Elysia
+**Backend** | Go, Node.js/Express.js, Hono, Elysia
 
 **Database** | PostgreSQL, NoSQL (MongoDB), VectorDB (Qdrant, Pinecone)
 
