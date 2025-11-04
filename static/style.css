@@ -88,7 +88,7 @@ h1 {
 
 h2 {
     font-size: 2em;
-    color: var(--gb-fg0);
+    color: var(--gb-blue);
 }
 
 h3 {
@@ -114,16 +114,16 @@ a {
 }
 
 a:hover {
-    color: var(--gb-blue);
+    color: var(--gb-orange);
     text-decoration: underline;
 }
 
 a:visited {
-    color: var(--gb-purple-bright);
+    color: var(--gb-red-bright);
 }
 
 a:visited:hover {
-    color: var(--gb-purple);
+    color: var(--gb-red);
 }
 
 /* Lists */
@@ -141,7 +141,7 @@ li {
 /* Code blocks */
 code {
     background-color: var(--gb-bg2);
-    color: var(--gb-fg0);
+    color: var(--gb-red);
     padding: 0.2em 0.4em;
     border-radius: 3px;
     font-family: "Commit Mono", monospace;
