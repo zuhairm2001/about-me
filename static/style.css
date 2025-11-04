@@ -1,15 +1,374 @@
 @font-face {
-  font-family: 'Commit Mono';
+    font-family: "Commit Mono";
 
-  src: url('https://zuhairmalik.dev/CommitMonoV143/CommitMono%20VariableFont.woff2') format('woff2'),
-       url('https://zuhairmalik.dev/CommitMonoV143/CommitMono%20VariableFont.ttf') format('truetype');
+    src:
+        url("https://zuhairmalik.dev/CommitMonoV143/CommitMono%20VariableFont.woff2")
+            format("woff2"),
+        url("https://zuhairmalik.dev/CommitMonoV143/CommitMono%20VariableFont.ttf")
+            format("truetype");
 
-  font-weight: normal;
-  font-style: normal;
+    font-weight: normal;
+    font-style: normal;
 
-  font-display: swap;
+    font-display: swap;
+}
+
+/* Gruvbox Light Color Palette */
+:root {
+    /* Background colors */
+    --gb-bg0: #fbf1c7; /* main background */
+    --gb-bg1: #ebdbb2; /* lighter background */
+    --gb-bg2: #d5c4a1; /* selection background */
+    --gb-bg3: #bdae93; /* comments, inactive text */
+    --gb-bg4: #a89984; /* darker gray */
+
+    /* Foreground colors */
+    --gb-fg0: #282828; /* main foreground */
+    --gb-fg1: #3c3836; /* alternative foreground */
+    --gb-fg2: #504945; /* muted foreground */
+    --gb-fg3: #665c54; /* faint foreground */
+    --gb-fg4: #7c6f64; /* subtle foreground */
+
+    /* Accent colors */
+    --gb-red: #9d0006;
+    --gb-green: #79740e;
+    --gb-yellow: #b57614;
+    --gb-blue: #076678;
+    --gb-purple: #8f3f71;
+    --gb-aqua: #427b58;
+    --gb-orange: #af3a03;
+
+    /* Additional colors */
+    --gb-red-bright: #cc241d;
+    --gb-green-bright: #98971a;
+    --gb-yellow-bright: #d79921;
+    --gb-blue-bright: #458588;
+    --gb-purple-bright: #b16286;
+    --gb-aqua-bright: #689d6a;
+    --gb-orange-bright: #d65d0e;
+}
+
+/* Base styles */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-  font-family: 'Commit Mono', monospace;
+    font-family: "Commit Mono", monospace;
+    background-color: var(--gb-bg0);
+    color: var(--gb-fg1);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--gb-fg0);
+    font-weight: 600;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: var(--gb-fg0);
+    padding-bottom: 0.3em;
+}
+
+h2 {
+    font-size: 2em;
+    color: var(--gb-fg0);
+}
+
+h3 {
+    font-size: 1.5em;
+    color: var(--gb-fg1);
+}
+
+h4 {
+    font-size: 1.25em;
+    color: var(--gb-fg1);
+}
+
+p {
+    margin-bottom: 1em;
+    color: var(--gb-fg1);
+}
+
+/* Links */
+a {
+    color: var(--gb-blue-bright);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: var(--gb-blue);
+    text-decoration: underline;
+}
+
+a:visited {
+    color: var(--gb-purple-bright);
+}
+
+a:visited:hover {
+    color: var(--gb-purple);
+}
+
+/* Lists */
+ul,
+ol {
+    margin: 1em 0;
+    padding-left: 2em;
+}
+
+li {
+    margin-bottom: 0.5em;
+    color: var(--gb-fg1);
+}
+
+/* Code blocks */
+code {
+    background-color: var(--gb-bg2);
+    color: var(--gb-fg0);
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+    font-family: "Commit Mono", monospace;
+    font-size: 0.9em;
+}
+
+pre {
+    background-color: var(--gb-bg1);
+    border: 1px solid var(--gb-bg3);
+    border-radius: 5px;
+    padding: 1em;
+    overflow-x: auto;
+    margin: 1em 0;
+}
+
+pre code {
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+    font-size: 1em;
+}
+
+/* Blockquotes */
+blockquote {
+    border-left: 4px solid var(--gb-blue-bright);
+    margin: 1em 0;
+    padding: 0.5em 1.5em;
+    background-color: var(--gb-bg1);
+    color: var(--gb-fg2);
+    font-style: italic;
+}
+
+/* Tables */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1em 0;
+}
+
+th,
+td {
+    border: 1px solid var(--gb-bg3);
+    padding: 0.75em;
+    text-align: left;
+}
+
+th {
+    background-color: var(--gb-bg1);
+    color: var(--gb-fg0);
+    font-weight: 600;
+}
+
+tr:nth-child(even) {
+    background-color: var(--gb-bg1);
+}
+
+/* Horizontal rule */
+hr {
+    border: none;
+    height: 2px;
+    background-color: var(--gb-bg3);
+    margin: 2em 0;
+}
+
+/* Buttons */
+button,
+.button {
+    background-color: var(--gb-blue-bright);
+    color: var(--gb-bg0);
+    border: none;
+    padding: 0.75em 1.5em;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Commit Mono", monospace;
+    font-size: 1em;
+    transition: all 0.2s ease;
+}
+
+button:hover,
+.button:hover {
+    background-color: var(--gb-blue);
+    transform: translateY(-1px);
+}
+
+button:active,
+.button:active {
+    transform: translateY(0);
+}
+
+/* Form elements */
+input,
+textarea,
+select {
+    background-color: var(--gb-bg1);
+    color: var(--gb-fg0);
+    border: 1px solid var(--gb-bg3);
+    padding: 0.75em;
+    border-radius: 5px;
+    font-family: "Commit Mono", monospace;
+    font-size: 1em;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: var(--gb-blue-bright);
+    box-shadow: 0 0 0 2px rgba(69, 133, 136, 0.2);
+}
+
+/* Selection */
+::selection {
+    background-color: var(--gb-bg2);
+    color: var(--gb-fg0);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--gb-bg1);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--gb-bg3);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--gb-bg4);
+}
+
+/* Syntax highlighting colors */
+.highlight-red {
+    color: var(--gb-red-bright);
+}
+.highlight-green {
+    color: var(--gb-green-bright);
+}
+.highlight-yellow {
+    color: var(--gb-yellow-bright);
+}
+.highlight-blue {
+    color: var(--gb-blue-bright);
+}
+.highlight-purple {
+    color: var(--gb-purple-bright);
+}
+.highlight-aqua {
+    color: var(--gb-aqua-bright);
+}
+.highlight-orange {
+    color: var(--gb-orange-bright);
+}
+
+/* Utility classes */
+.text-muted {
+    color: var(--gb-fg3);
+}
+.text-bright {
+    color: var(--gb-fg0);
+}
+.bg-light {
+    background-color: var(--gb-bg1);
+}
+.bg-dark {
+    background-color: var(--gb-bg2);
+}
+
+/* Ellipsis animation */
+.ellipsis {
+    display: inline-block;
+}
+
+.ellipsis .dot {
+    display: inline-block;
+    animation: dot-fade 1.5s infinite ease-in-out;
+}
+
+.ellipsis .dot:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.ellipsis .dot:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.ellipsis .dot:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes dot-fade {
+    0%,
+    100% {
+        opacity: 0.3;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+/* Container for responsive design */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.75em;
+    }
+    h3 {
+        font-size: 1.5em;
+    }
+
+    .container {
+        padding: 0 0.5em;
+    }
 }
