@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'Commit Mono';
+
+  src: url('https://zuhairmalik.dev/CommitMonoV143/CommitMono%20VariableFont.woff2') format('woff2'),
+       url('https://zuhairmalik.dev/CommitMonoV143/CommitMono%20VariableFont.ttf') format('truetype');
+
+  font-weight: normal;
+  font-style: normal;
+
+  font-display: swap;
+}
+
+body {
+  font-family: 'Commit Mono', monospace;
+}
