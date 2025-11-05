@@ -62,8 +62,8 @@ body {
     background-color: var(--gb-bg0);
     color: var(--gb-fg1);
     line-height: 1.6;
-    margin: 0;
-    padding: 0;
+    margin: 3;
+    padding: 1;
     font-size: 16px;
 }
 
