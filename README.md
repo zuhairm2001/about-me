@@ -13,5 +13,3 @@ email me at me@zuhairmalik.dev
 visit my [website](https://zuhairmalik.dev)
 
 ![Banner](https://bucket.zuhairmalik.dev/steins-gate.gif)
-
-https://share.icloud.com/photos/046cZzfOT_x-GftyvnuKtQZRA
