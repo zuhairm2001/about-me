@@ -2,7 +2,7 @@
 title: "The Proliferation of AI in the Written Word"
 ---
 
-## the proliferation of ai in the written word
+## why let go of what makes us human 
 
 To preface this, I cannot in good conscience say that I am not guilty of the usage of ai in writing. In my defence, my usage of LLMs in writing were all in topics I did not care for.
 To further preface this, I am also not saying that I have anything particularly novel to say or that I am an inherently good writer.
