@@ -1,21 +1,18 @@
-package handlers
+package handlers 
 
 import (
+
 	"html/template"
-	"net/http"
 	"os"
 	"path/filepath"
 	"strings"
+	"net/http"
 
 	"github.com/adrg/frontmatter"
 	"github.com/gomarkdown/markdown"
 	"github.com/gomarkdown/markdown/html"
 	"github.com/gomarkdown/markdown/parser"
 )
-
-var indexTmpl = template.Must(template.ParseFiles("templates/index.html"))
-var writingsTmpl = template.Must(template.ParseFiles("templates/writings.html"))
-var writingTmpl = template.Must(template.ParseFiles("templates/writing.html"))
 
 type PostMeta struct {
 	Title string `yaml:"title"`
@@ -37,9 +34,10 @@ type WritingPageData struct {
 	Content template.HTML
 }
 
-func IndexHandler(w http.ResponseWriter, r *http.Request) {
-	indexTmpl.Execute(w, nil)
-}
+
+var writingsTmpl = template.Must(template.ParseFiles("templates/writings.html"))
+var writingTmpl = template.Must(template.ParseFiles("templates/writing.html"))
+
 
 func WritingsHandler(w http.ResponseWriter, r *http.Request) {
 	var posts []PostSummary

@@ -15,12 +15,11 @@ Professional software engineer with hands-on experience building and maintaining
 
 ## Work Experience
 ### Software Engineer | Microsoft <span class="spacer"></span>Dec 2025 - Present
-*Engineer on Azure Kubernetes Service*<span class="spacer"></span>Go | Azure | Distributed Systems
+*Engineer on Azure Kubernetes Service Fleet Manager*<span class="spacer"></span>Go | Azure | Distributed Systems
 
-- **Platform Development:** Contributed to the core AKS service, enabling managed Kubernetes clusters at scale for enterprise customers.  
-- **Scalability & Reliability:** Worked on multi-tenant orchestration, autoscaling, and high availability of clusters across regions.  
-- **Security & Compliance:** Implemented RBAC, network policies, and platform-level security features to ensure tenant isolation and compliance.  
-- **Automation & Observability:** Built and maintained automated deployment pipelines, monitoring, and alerting systems for platform health and performance.  
+- **Platform Development:** Contributed to the core AKS service, enabling managed Kubernetes multi-clusters setups at scale for enterprise customers.  
+- **Feature Development:** Core contributor in creating the Cilium Cluster Mesh feature delivered via Fleet Manager which enabled significant growth in the product and was featured in KubeCon 2026
+- **AI-Native Development:** Drove and enabled team members to onboard onto AI native tooling, through development of custom tooling fit for the teams particular use cases 
 - **Cloud-Native Engineering:** Applied distributed systems principles to design and maintain critical infrastructure services, including the control plane, networking, and storage integrations.
 
 ### Software Engineer | AI Consulting Group <span class="spacer"></span>Feb 2025 - Nov 2025
