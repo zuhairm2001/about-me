@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>writings | zuhairmalik</title>
+        <link rel="stylesheet" href="/static/style.css" />
+        <link rel="icon" href="/static/favicon.ico" type="image/x-icon" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>writings</h1>
+            <ul class="writings-list">
+                {{range .Posts}}
+                <li>
+                    <a href="/writing/{{.Date}}/{{.Slug}}">{{.Title}}</a>
+                    <span class="date">{{.Date}}</span>
+                </li>
+                {{end}}
+            </ul>
+            <p><a href="/">back home</a></p>
+        </div>
+    </body>
+</html>

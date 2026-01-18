@@ -12,6 +12,8 @@ func main() {
 	http.Handle("/static/", http.StripPrefix("/static/", fs))
 
 	http.HandleFunc("/", handlers.IndexHandler)
+	http.HandleFunc("/writings", handlers.WritingsHandler)
+	http.HandleFunc("/writing/", handlers.WritingHandler)
 
 	log.Println("Server running at port 8080")
 	log.Fatal(http.ListenAndServe(":8080", nil))

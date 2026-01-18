@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>{{.Title}} | zuhairmalik</title>
+        <link rel="stylesheet" href="/static/style.css" />
+        <link rel="icon" href="/static/favicon.ico" type="image/x-icon" />
+    </head>
+    <body>
+        <div class="container">
+            <article>
+                <header>
+                    <h1>{{.Title}}</h1>
+                    <time>{{.Date}}</time>
+                </header>
+                <div class="content">
+                    {{.Content}}
+                </div>
+            </article>
+            <p><a href="/writings">back to writings</a></p>
+        </div>
+    </body>
+</html>
